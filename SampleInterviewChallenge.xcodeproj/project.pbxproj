@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CE428D8B1B8BBF94000CEFD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE428D8A1B8BBF94000CEFD0 /* AppDelegate.swift */; };
-		CE428D8D1B8BBF94000CEFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE428D8C1B8BBF94000CEFD0 /* ViewController.swift */; };
+		CE428D8D1B8BBF94000CEFD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE428D8C1B8BBF94000CEFD0 /* LoginViewController.swift */; };
 		CE428D901B8BBF94000CEFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE428D8E1B8BBF94000CEFD0 /* Main.storyboard */; };
 		CE428D921B8BBF94000CEFD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE428D911B8BBF94000CEFD0 /* Images.xcassets */; };
 		CE428D951B8BBF94000CEFD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE428D931B8BBF94000CEFD0 /* LaunchScreen.xib */; };
 		CE428DA11B8BBF94000CEFD0 /* SampleInterviewChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE428DA01B8BBF94000CEFD0 /* SampleInterviewChallengeTests.swift */; };
+		CE428DAF1B93C0CB000CEFD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE428DAE1B93C0CB000CEFD0 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		CE428D851B8BBF93000CEFD0 /* SampleInterviewChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleInterviewChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE428D891B8BBF94000CEFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE428D8A1B8BBF94000CEFD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE428D8C1B8BBF94000CEFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE428D8C1B8BBF94000CEFD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE428D8F1B8BBF94000CEFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE428D911B8BBF94000CEFD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE428D941B8BBF94000CEFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CE428D9A1B8BBF94000CEFD0 /* SampleInterviewChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleInterviewChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE428D9F1B8BBF94000CEFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE428DA01B8BBF94000CEFD0 /* SampleInterviewChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleInterviewChallengeTests.swift; sourceTree = "<group>"; };
+		CE428DAE1B93C0CB000CEFD0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,10 @@
 		CE428D871B8BBF93000CEFD0 /* SampleInterviewChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				CE428D8A1B8BBF94000CEFD0 /* AppDelegate.swift */,
-				CE428D8C1B8BBF94000CEFD0 /* ViewController.swift */,
+				CE428D8C1B8BBF94000CEFD0 /* LoginViewController.swift */,
+				CE428DAE1B93C0CB000CEFD0 /* MainViewController.swift */,
 				CE428D8E1B8BBF94000CEFD0 /* Main.storyboard */,
 				CE428D911B8BBF94000CEFD0 /* Images.xcassets */,
-				CE428D931B8BBF94000CEFD0 /* LaunchScreen.xib */,
 				CE428D881B8BBF93000CEFD0 /* Supporting Files */,
 			);
 			path = SampleInterviewChallenge;
@@ -90,6 +91,8 @@
 		CE428D881B8BBF93000CEFD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE428D931B8BBF94000CEFD0 /* LaunchScreen.xib */,
+				CE428D8A1B8BBF94000CEFD0 /* AppDelegate.swift */,
 				CE428D891B8BBF94000CEFD0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE428D8D1B8BBF94000CEFD0 /* ViewController.swift in Sources */,
+				CE428DAF1B93C0CB000CEFD0 /* MainViewController.swift in Sources */,
+				CE428D8D1B8BBF94000CEFD0 /* LoginViewController.swift in Sources */,
 				CE428D8B1B8BBF94000CEFD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +415,7 @@
 				CE428DA61B8BBF94000CEFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE428DA71B8BBF94000CEFD0 /* Build configuration list for PBXNativeTarget "SampleInterviewChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				CE428DA91B8BBF94000CEFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
